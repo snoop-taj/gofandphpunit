@@ -7,45 +7,44 @@ use GOF\Creational\Builder\HTMLPage;
 class HTMLPageBuilder extends AbstractPageBuilder
 {
 
-private $page=null;
+    private $page=null;
 
-public function __construct()
-{
+    public function __construct()
+    {
 
-	$this->page = new HTMLPage();
+        $this->page = new HTMLPage();
 
-}
+    }
 
-public function setTitle($title)
-{
+    public function setTitle($title)
+    {
 
-	$this->page->setTitle($title);
+        $this->page->setTitle($title);
 
-}
+    }
 
-public function setHeading($head)
-{
+    public function setHeading($head)
+    {
 
-	$this->page->setHeading($head);
+        $this->page->setHeading($head);
 
-}
+    }
 
-public function setContent($content)
-{
+    public function setContent($content)
+    {
 
-	$this->page->setContent($content);
+        $this->page->setContent($content);
 
-}
+    }
 
-public function formPage()
-{
-	$this->page->formPage();
+    public function formPage()
+    {
+        $this->page->formPage();
 
-}
+    }
 
-public function getPage()
-{
-	return $this->page;
-}
-
+    public function getPage()
+    {
+        return $this->page;
+    }
 }

@@ -10,25 +10,24 @@ class SnoopsFactoryMethod extends AbstractBookFactory
 
     private $context = 'Snoop';
 
-    public function makePHPBook($param='')
+    public function makePHPBook($param = '')
     {
-	$book = null; 
+        $book = null;
 
-    	switch($param) {
-	    case 'us':
-	    $book = new SnoopsPHPBook();
-	    break;
+        switch ($param) {
+            case 'us':
+                $book = new SnoopsPHPBook();
+                break;
 
-	    case 'sams':
-	    $book = new SamsPHPBook();
-	    break;
+            case 'sams':
+                $book = new SamsPHPBook();
+                break;
 
-	    default:
-	    $book = new SnoopsPHPBook();
-	    break;
-	}
-	
-	return $book;
+            default:
+                $book = new SnoopsPHPBook();
+                break;
+        }
+    
+        return $book;
     }
-
 }

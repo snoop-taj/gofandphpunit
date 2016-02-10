@@ -2,9 +2,8 @@
 
 namespace GOF\Creational\Builder;
 
-abstract class AbstractPageBuilder 
+abstract class AbstractPageBuilder
 {
 
-abstract public function getPage();
-
+    abstract public function getPage();
 }
